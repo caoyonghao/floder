@@ -1,0 +1,30 @@
+.can_click {
+    color: #269abc;
+    cursor: pointer;
+}
+.can_click:hover {
+    color: #31b0d5;
+}
+
+#search_box {
+    width: 70%;
+    float: left;
+}
+
+.common_btn {
+    float: right;
+    margin-right: 10px;
+}
+
+#file_list {
+    padding-top: 10px;
+}
+
+#floder_banner {
+    font-size: 30px;
+}
+
+#scan_progress {
+    display: none;
+    margin-top: 10px;
+}

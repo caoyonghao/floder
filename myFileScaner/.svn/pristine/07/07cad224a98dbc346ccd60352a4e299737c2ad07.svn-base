@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Folder</title>
+    <link rel="stylesheet" href="/3rd/tinybox2/style.css">
+    <link rel="stylesheet" href="/3rd/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/3rd/jquery/jquery.js"></script>
+    <script src="/3rd/tinybox2/tinybox.js"></script>
+    <script src="/3rd/socketio/socket.io.js"></script>
+    <script src="/3rd/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+            font-size: 62.5%;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" id="floder_banner" href="#">Floder</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+        <div class="container">
+            <ol class="breadcrumb">
+
+            </ol>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group" id="search_box">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" id='search_btn' type="button">Go!</button>
+                          </span>
+                        <input type="text" class="form-control" id='search_value' placeholder="Search for...">
+                    </div><!-- /input-group -->
+                    <button type="button" id="back_btn" class="btn btn-info common_btn">back</button>
+                    <button type="button" id="sort_btn" class="btn btn-info common_btn">sort by size</button>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            <div id="scan_progress" class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    working! Please wait.
+                </div>
+            </div>
+            <ul class="list-group" id="file_list"></ul>
+        </div>
+           <!-- /.container-fluid -->
+    </nav>
+    <script src="/js/main.js"></script>
+</body>
+</html>
